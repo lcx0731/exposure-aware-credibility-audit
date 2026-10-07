@@ -1,0 +1,1423 @@
+{
+  "schema_version": 1,
+  "data": "Seeded synthetic portfolios; no real policyholder or financial data.",
+  "configuration": {
+    "replications": 50,
+    "calibration_size": 2000,
+    "evaluation_size_per_scenario": 1600,
+    "seed": 20261007,
+    "horizon_years": 3.0,
+    "interval_level": 0.9,
+    "history_years": [
+      0.0,
+      0.25,
+      1.0,
+      4.0
+    ],
+    "calibration_prior": {
+      "shape": 0.8,
+      "rate": 1.6
+    },
+    "evaluation_priors": {
+      "stable_population": {
+        "shape": 0.8,
+        "rate": 1.6
+      },
+      "shifted_population": {
+        "shape": 0.8,
+        "rate": 0.8
+      }
+    }
+  },
+  "software": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "fit_diagnostics": {
+    "shape": {
+      "mean": 0.8005262817401334,
+      "mcse": 0.010374854594268948
+    },
+    "rate": {
+      "mean": 1.6281014130939226,
+      "mcse": 0.023465119836653642
+    },
+    "maximum_gradient": 6.57841331438642e-09,
+    "minimum_successful_starts": 3
+  },
+  "results": [
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 2.8257759366653032,
+        "mcse": 0.01757764081382671
+      },
+      "rate_mse": {
+        "mean": 0.923415666472887,
+        "mcse": 0.012475813216714192
+      },
+      "coverage": {
+        "mean": 0.8089875,
+        "mcse": 0.0017807869519870562
+      },
+      "interval_width": {
+        "mean": 4.13725,
+        "mcse": 0.014283660566664039
+      },
+      "model_interval_mass": {
+        "mean": 0.9700284931059574,
+        "mcse": 0.00037436641779506824
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.1610409931059574,
+        "mcse": 0.0017716563639996515
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 2.1645231482342164,
+        "mcse": 0.006693685162846877
+      },
+      "rate_mse": {
+        "mean": 0.923415666472887,
+        "mcse": 0.012475813216714192
+      },
+      "coverage": {
+        "mean": 0.88615,
+        "mcse": 0.001821897698689418
+      },
+      "interval_width": {
+        "mean": 5.645675,
+        "mcse": 0.024729395412119964
+      },
+      "model_interval_mass": {
+        "mean": 0.9598019307707745,
+        "mcse": 0.00022537426925451577
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.07365193077077432,
+        "mcse": 0.001858564232600861
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 2.0541533569247146,
+        "mcse": 0.0038786405879629453
+      },
+      "rate_mse": {
+        "mean": 0.7371945358723309,
+        "mcse": 0.008801161922375289
+      },
+      "coverage": {
+        "mean": 0.9557999999999999,
+        "mcse": 0.000769731930543328
+      },
+      "interval_width": {
+        "mean": 8.5741375,
+        "mcse": 0.009886906571629082
+      },
+      "model_interval_mass": {
+        "mean": 0.9560527154728022,
+        "mcse": 4.152539433844857e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0002527154728021385,
+        "mcse": 0.000770742653032158
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 3.717416956790643,
+        "mcse": 0.02764246823527365
+      },
+      "rate_mse": {
+        "mean": 1.5189361402250214,
+        "mcse": 0.017983201229175384
+      },
+      "coverage": {
+        "mean": 0.7593499999999999,
+        "mcse": 0.0031289240668840993
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.220902136962293,
+        "mcse": 0.0023790240778506443
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 3.753001452685447,
+        "mcse": 0.0469660708686786
+      },
+      "rate_mse": {
+        "mean": 1.523406438429666,
+        "mcse": 0.03170111056573326
+      },
+      "coverage": {
+        "mean": 0.7536999999999999,
+        "mcse": 0.003814740475833077
+      },
+      "interval_width": {
+        "mean": 3.96,
+        "mcse": 0.027994168488950606
+      },
+      "model_interval_mass": {
+        "mean": 0.9808285331128738,
+        "mcse": 0.0009313934261775079
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.22712853311287395,
+        "mcse": 0.003514476231952023
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 2.4561491988980335,
+        "mcse": 0.013919446733875875
+      },
+      "rate_mse": {
+        "mean": 1.523406438429666,
+        "mcse": 0.03170111056573326
+      },
+      "coverage": {
+        "mean": 0.84295,
+        "mcse": 0.004441048092879123
+      },
+      "interval_width": {
+        "mean": 5.64,
+        "mcse": 0.06857142857142857
+      },
+      "model_interval_mass": {
+        "mean": 0.9603848808619372,
+        "mcse": 0.0007947504928190827
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.11743488086193736,
+        "mcse": 0.003894776351568561
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 2.2619055131674566,
+        "mcse": 0.007340750431379892
+      },
+      "rate_mse": {
+        "mean": 1.2507019256529208,
+        "mcse": 0.026218379656127784
+      },
+      "coverage": {
+        "mean": 0.9598499999999999,
+        "mcse": 0.0014628215676477812
+      },
+      "interval_width": {
+        "mean": 11.0,
+        "mcse": 0.0
+      },
+      "model_interval_mass": {
+        "mean": 0.9603221832847452,
+        "mcse": 0.0
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0004721832847448346,
+        "mcse": 0.0014628215676477803
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 3.7574385170924307,
+        "mcse": 0.04775696414753198
+      },
+      "rate_mse": {
+        "mean": 1.5247039119272718,
+        "mcse": 0.03186108537439955
+      },
+      "coverage": {
+        "mean": 0.7527499999999999,
+        "mcse": 0.004301903944885382
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.22750213696229296,
+        "mcse": 0.003656591235873246
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 3.178543823490926,
+        "mcse": 0.03381191286006726
+      },
+      "rate_mse": {
+        "mean": 1.2061370982785875,
+        "mcse": 0.03356529197134888
+      },
+      "coverage": {
+        "mean": 0.7522,
+        "mcse": 0.0037386836055008474
+      },
+      "interval_width": {
+        "mean": 3.6499,
+        "mcse": 0.03375987837293112
+      },
+      "model_interval_mass": {
+        "mean": 0.9603644926712681,
+        "mcse": 0.0012309218643240638
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.20816449267126813,
+        "mcse": 0.0034411402576817597
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 2.296462710396323,
+        "mcse": 0.012607469165627095
+      },
+      "rate_mse": {
+        "mean": 1.2061370982785875,
+        "mcse": 0.03356529197134888
+      },
+      "coverage": {
+        "mean": 0.86615,
+        "mcse": 0.002711662266009165
+      },
+      "interval_width": {
+        "mean": 5.76915,
+        "mcse": 0.018340544191067218
+      },
+      "model_interval_mass": {
+        "mean": 0.9615478789586841,
+        "mcse": 0.00047068477537870804
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.09539787895868417,
+        "mcse": 0.0028464884516248064
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 2.15387567397176,
+        "mcse": 0.007407226258528932
+      },
+      "rate_mse": {
+        "mean": 0.948181054873817,
+        "mcse": 0.024903301927527672
+      },
+      "coverage": {
+        "mean": 0.9531000000000002,
+        "mcse": 0.001374995361773254
+      },
+      "interval_width": {
+        "mean": 9.356850000000001,
+        "mcse": 0.018701441884823432
+      },
+      "model_interval_mass": {
+        "mean": 0.9536910533220738,
+        "mcse": 3.1502799779441476e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0005910533220740104,
+        "mcse": 0.0013750959391420974
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 3.7066812793919195,
+        "mcse": 0.0468350074158276
+      },
+      "rate_mse": {
+        "mean": 1.5180669114947465,
+        "mcse": 0.04148799944334677
+      },
+      "coverage": {
+        "mean": 0.7619500000000001,
+        "mcse": 0.0041779853068781595
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.21830213696229303,
+        "mcse": 0.003798824241426423
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 2.4843039092302974,
+        "mcse": 0.02028707134054399
+      },
+      "rate_mse": {
+        "mean": 0.7143268684213117,
+        "mcse": 0.014176642817400482
+      },
+      "coverage": {
+        "mean": 0.8288999999999999,
+        "mcse": 0.0031078898937762773
+      },
+      "interval_width": {
+        "mean": 4.341550000000001,
+        "mcse": 0.016919058508567387
+      },
+      "model_interval_mass": {
+        "mean": 0.9713551756687508,
+        "mcse": 0.00038169193917810944
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.14245517566875068,
+        "mcse": 0.0030434113077258116
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 2.0907351830386975,
+        "mcse": 0.010948793003306406
+      },
+      "rate_mse": {
+        "mean": 0.7143268684213117,
+        "mcse": 0.014176642817400482
+      },
+      "coverage": {
+        "mean": 0.9047999999999999,
+        "mcse": 0.002511036862025125
+      },
+      "interval_width": {
+        "mean": 5.9185,
+        "mcse": 0.025750668705404725
+      },
+      "model_interval_mass": {
+        "mean": 0.9628130090326653,
+        "mcse": 0.00032966837279251103
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.05801300903266516,
+        "mcse": 0.0025984684639016333
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 2.0102370202444693,
+        "mcse": 0.007757491784087778
+      },
+      "rate_mse": {
+        "mean": 0.5478176271974867,
+        "mcse": 0.009335236115510195
+      },
+      "coverage": {
+        "mean": 0.95415,
+        "mcse": 0.0015462429779755753
+      },
+      "interval_width": {
+        "mean": 7.91125,
+        "mcse": 0.026342741903993352
+      },
+      "model_interval_mass": {
+        "mean": 0.9551706767048228,
+        "mcse": 0.00010003112276445865
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.00102067670482267,
+        "mcse": 0.0015539407856858117
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 3.7019651308670984,
+        "mcse": 0.04442299663648975
+      },
+      "rate_mse": {
+        "mean": 1.5039413010564948,
+        "mcse": 0.031388524529528554
+      },
+      "coverage": {
+        "mean": 0.7619999999999999,
+        "mcse": 0.003831928166000474
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.218252136962293,
+        "mcse": 0.003330933498429402
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.8872545612545448,
+        "mcse": 0.008626968401816953
+      },
+      "rate_mse": {
+        "mean": 0.2497922607619834,
+        "mcse": 0.004745101498107044
+      },
+      "coverage": {
+        "mean": 0.9011500000000001,
+        "mcse": 0.0016570966742333135
+      },
+      "interval_width": {
+        "mean": 4.59755,
+        "mcse": 0.018744045312948793
+      },
+      "model_interval_mass": {
+        "mean": 0.9675657709709367,
+        "mcse": 0.0002559650611458531
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0664157709709367,
+        "mcse": 0.0016182471139975741
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.8147455006038122,
+        "mcse": 0.006744708384103797
+      },
+      "rate_mse": {
+        "mean": 0.2497922607619834,
+        "mcse": 0.004745101498107044
+      },
+      "coverage": {
+        "mean": 0.9307,
+        "mcse": 0.0014846837085001334
+      },
+      "interval_width": {
+        "mean": 5.25505,
+        "mcse": 0.02548003319928635
+      },
+      "model_interval_mass": {
+        "mean": 0.9544619542298105,
+        "mcse": 0.00019604582443545046
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.023761954229810627,
+        "mcse": 0.0015097694793973907
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.7905952203151718,
+        "mcse": 0.006082353709997198
+      },
+      "rate_mse": {
+        "mean": 0.20207753576509854,
+        "mcse": 0.003137072108089701
+      },
+      "coverage": {
+        "mean": 0.9561,
+        "mcse": 0.001143214229928148
+      },
+      "interval_width": {
+        "mean": 6.02845,
+        "mcse": 0.026071907040619288
+      },
+      "model_interval_mass": {
+        "mean": 0.9550269485795669,
+        "mcse": 0.00012103163165168007
+      },
+      "coverage_minus_model_mass": {
+        "mean": 0.001073051420432962,
+        "mcse": 0.0011609400496617078
+      }
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 3.7035828998111238,
+        "mcse": 0.03551932141602821
+      },
+      "rate_mse": {
+        "mean": 1.5290324364215722,
+        "mcse": 0.02811707514434527
+      },
+      "coverage": {
+        "mean": 0.7606999999999999,
+        "mcse": 0.004017842857117459
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.219552136962293,
+        "mcse": 0.003371971144832184
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.7775538549767207,
+        "mcse": 0.006565795606783276
+      },
+      "rate_mse": {
+        "mean": 0.21671264290797917,
+        "mcse": 0.002325769768897551
+      },
+      "coverage": {
+        "mean": 0.9171124999999999,
+        "mcse": 0.001196014053992234
+      },
+      "interval_width": {
+        "mean": 3.665237500000001,
+        "mcse": 0.014458672742492299
+      },
+      "model_interval_mass": {
+        "mean": 0.9744115861571988,
+        "mcse": 0.0003587297144096428
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0572990861571988,
+        "mcse": 0.0011537152758992867
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.584121629719215,
+        "mcse": 0.0037779330294573474
+      },
+      "rate_mse": {
+        "mean": 0.21671264290797917,
+        "mcse": 0.002325769768897551
+      },
+      "coverage": {
+        "mean": 0.96,
+        "mcse": 0.0008905326885565488
+      },
+      "interval_width": {
+        "mean": 4.978825,
+        "mcse": 0.021494323526865197
+      },
+      "model_interval_mass": {
+        "mean": 0.962103668525481,
+        "mcse": 0.00023628878202771236
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0021036685254811867,
+        "mcse": 0.001002350207117605
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.5830092738745092,
+        "mcse": 0.003688834144042641
+      },
+      "rate_mse": {
+        "mean": 0.2161373256070414,
+        "mcse": 0.002260878635860967
+      },
+      "coverage": {
+        "mean": 0.9616625000000001,
+        "mcse": 0.0007024941898227306
+      },
+      "interval_width": {
+        "mean": 5.052512500000001,
+        "mcse": 0.004330034597707851
+      },
+      "model_interval_mass": {
+        "mean": 0.9625436420051635,
+        "mcse": 1.8410093465514755e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0008811420051635291,
+        "mcse": 0.000703395417417983
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 1.9968717352720526,
+        "mcse": 0.008453553333634586
+      },
+      "rate_mse": {
+        "mean": 0.31229571395590466,
+        "mcse": 0.003688233241096323
+      },
+      "coverage": {
+        "mean": 0.9114249999999999,
+        "mcse": 0.002212343618363632
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.068827136962293,
+        "mcse": 0.001510743632084429
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.996276907211394,
+        "mcse": 0.017693957437680784
+      },
+      "rate_mse": {
+        "mean": 0.2974755579763093,
+        "mcse": 0.006823601902943782
+      },
+      "coverage": {
+        "mean": 0.9135500000000001,
+        "mcse": 0.0026869772866132528
+      },
+      "interval_width": {
+        "mean": 3.96,
+        "mcse": 0.027994168488950606
+      },
+      "model_interval_mass": {
+        "mean": 0.9808285331128738,
+        "mcse": 0.0009313934261775079
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.06727853311287393,
+        "mcse": 0.002331650259491132
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.678926183314963,
+        "mcse": 0.009389314049170126
+      },
+      "rate_mse": {
+        "mean": 0.2974755579763093,
+        "mcse": 0.006823601902943782
+      },
+      "coverage": {
+        "mean": 0.9571999999999999,
+        "mcse": 0.0022115651489755545
+      },
+      "interval_width": {
+        "mean": 5.64,
+        "mcse": 0.06857142857142857
+      },
+      "model_interval_mass": {
+        "mean": 0.9603848808619372,
+        "mcse": 0.0007947504928190827
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0031848808619373403,
+        "mcse": 0.001947972505498314
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.6772102357345673,
+        "mcse": 0.009199083170347651
+      },
+      "rate_mse": {
+        "mean": 0.29689009746657025,
+        "mcse": 0.006736658548893078
+      },
+      "coverage": {
+        "mean": 0.9645999999999999,
+        "mcse": 0.001602548989986305
+      },
+      "interval_width": {
+        "mean": 6.0,
+        "mcse": 0.0
+      },
+      "model_interval_mass": {
+        "mean": 0.9656967884232415,
+        "mcse": 1.586032892321652e-17
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0010967884232414707,
+        "mcse": 0.0016025489899863042
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 1.996430587222641,
+        "mcse": 0.017751892564146523
+      },
+      "rate_mse": {
+        "mean": 0.29751795361104344,
+        "mcse": 0.006840632722763453
+      },
+      "coverage": {
+        "mean": 0.9123500000000001,
+        "mcse": 0.0029306699798189923
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.06790213696229301,
+        "mcse": 0.002416418714804635
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.9102249303987167,
+        "mcse": 0.013649518481237629
+      },
+      "rate_mse": {
+        "mean": 0.27770904100566407,
+        "mcse": 0.0053845684236233805
+      },
+      "coverage": {
+        "mean": 0.8887,
+        "mcse": 0.0028849008754590665
+      },
+      "interval_width": {
+        "mean": 3.3794,
+        "mcse": 0.03609522270385399
+      },
+      "model_interval_mass": {
+        "mean": 0.9612249874871026,
+        "mcse": 0.0011889368690247725
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.07252498748710262,
+        "mcse": 0.0025697388669973214
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.652300398838204,
+        "mcse": 0.007799951606236914
+      },
+      "rate_mse": {
+        "mean": 0.27770904100566407,
+        "mcse": 0.0053845684236233805
+      },
+      "coverage": {
+        "mean": 0.9599000000000001,
+        "mcse": 0.0013794408805226648
+      },
+      "interval_width": {
+        "mean": 5.38995,
+        "mcse": 0.009938199340043903
+      },
+      "model_interval_mass": {
+        "mean": 0.9620285946549464,
+        "mcse": 0.0005168679030344462
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0021285946549464956,
+        "mcse": 0.0014879119625359287
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.6507303183778115,
+        "mcse": 0.007713038251092673
+      },
+      "rate_mse": {
+        "mean": 0.27686778172516724,
+        "mcse": 0.005236675512292237
+      },
+      "coverage": {
+        "mean": 0.95945,
+        "mcse": 0.0013387665660477732
+      },
+      "interval_width": {
+        "mean": 5.363299999999999,
+        "mcse": 0.006338431531989142
+      },
+      "model_interval_mass": {
+        "mean": 0.9604604084434288,
+        "mcse": 1.516082031404364e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0010104084434289671,
+        "mcse": 0.001336897715904503
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 2.0010081368034958,
+        "mcse": 0.014303093966501987
+      },
+      "rate_mse": {
+        "mean": 0.31830656729301976,
+        "mcse": 0.0065758360664125775
+      },
+      "coverage": {
+        "mean": 0.9108999999999999,
+        "mcse": 0.0029474651856142707
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.069352136962293,
+        "mcse": 0.0022374641453544466
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.7218397457493038,
+        "mcse": 0.010128087774493925
+      },
+      "rate_mse": {
+        "mean": 0.20057655796446408,
+        "mcse": 0.004420304958337307
+      },
+      "coverage": {
+        "mean": 0.9213499999999999,
+        "mcse": 0.0018073122450258583
+      },
+      "interval_width": {
+        "mean": 3.7566999999999995,
+        "mcse": 0.012322917094352527
+      },
+      "model_interval_mass": {
+        "mean": 0.9782569661462519,
+        "mcse": 0.0003505861310559741
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.056906966146251875,
+        "mcse": 0.0017276410059207268
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.569079316742193,
+        "mcse": 0.006826467808373224
+      },
+      "rate_mse": {
+        "mean": 0.20057655796446408,
+        "mcse": 0.004420304958337307
+      },
+      "coverage": {
+        "mean": 0.9648,
+        "mcse": 0.0012794290818604235
+      },
+      "interval_width": {
+        "mean": 5.01705,
+        "mcse": 0.014082064508314347
+      },
+      "model_interval_mass": {
+        "mean": 0.9662369603832931,
+        "mcse": 0.0003178920534092768
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0014369603832931237,
+        "mcse": 0.0013885158153665684
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.5684141847322244,
+        "mcse": 0.00678007882310521
+      },
+      "rate_mse": {
+        "mean": 0.19981403205615084,
+        "mcse": 0.004397166796074624
+      },
+      "coverage": {
+        "mean": 0.9644000000000001,
+        "mcse": 0.0012465462490499134
+      },
+      "interval_width": {
+        "mean": 4.983899999999999,
+        "mcse": 0.011080447939077745
+      },
+      "model_interval_mass": {
+        "mean": 0.9648486181321192,
+        "mcse": 4.912121875521863e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.00044861813211925956,
+        "mcse": 0.0012468578051398637
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 2.0048167028489647,
+        "mcse": 0.013661918079191985
+      },
+      "rate_mse": {
+        "mean": 0.3196387551359894,
+        "mcse": 0.008048286418318078
+      },
+      "coverage": {
+        "mean": 0.91,
+        "mcse": 0.002266661664660348
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.07025213696229302,
+        "mcse": 0.001822685277045762
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "model": "eb_mean_poisson",
+      "negative_log_score": {
+        "mean": 1.4818738365474675,
+        "mcse": 0.008234692662811766
+      },
+      "rate_mse": {
+        "mean": 0.09108941468547928,
+        "mcse": 0.001692649205223471
+      },
+      "coverage": {
+        "mean": 0.94485,
+        "mcse": 0.0016481436681977713
+      },
+      "interval_width": {
+        "mean": 3.5648500000000007,
+        "mcse": 0.011077281862866346
+      },
+      "model_interval_mass": {
+        "mean": 0.9773358578825669,
+        "mcse": 0.00019191885494288476
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.032485857882566804,
+        "mcse": 0.0016344206962803185
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "model": "empirical_bayes_nb",
+      "negative_log_score": {
+        "mean": 1.4361806199815013,
+        "mcse": 0.00683909462704672
+      },
+      "rate_mse": {
+        "mean": 0.09108941468547928,
+        "mcse": 0.001692649205223471
+      },
+      "coverage": {
+        "mean": 0.9581000000000001,
+        "mcse": 0.001449067258055108
+      },
+      "interval_width": {
+        "mean": 3.8683000000000005,
+        "mcse": 0.013934511553868616
+      },
+      "model_interval_mass": {
+        "mean": 0.9597642382017478,
+        "mcse": 0.00021934023805409133
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0016642382017477868,
+        "mcse": 0.0014989219413402714
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "model": "oracle_nb",
+      "negative_log_score": {
+        "mean": 1.4356823566534316,
+        "mcse": 0.006754256144883359
+      },
+      "rate_mse": {
+        "mean": 0.0909773911802771,
+        "mcse": 0.0016950503064925072
+      },
+      "coverage": {
+        "mean": 0.9582,
+        "mcse": 0.001394303278577894
+      },
+      "interval_width": {
+        "mean": 3.8628500000000003,
+        "mcse": 0.01329473771912813
+      },
+      "model_interval_mass": {
+        "mean": 0.9591687530218644,
+        "mcse": 6.327752452669692e-05
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.0009687530218644194,
+        "mcse": 0.001396981886975517
+      }
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "model": "pooled_poisson",
+      "negative_log_score": {
+        "mean": 1.985231514213109,
+        "mcse": 0.015655590202506453
+      },
+      "rate_mse": {
+        "mean": 0.3137195797835661,
+        "mcse": 0.007058015011461479
+      },
+      "coverage": {
+        "mean": 0.9124499999999999,
+        "mcse": 0.0027788284860894258
+      },
+      "interval_width": {
+        "mean": 3.94,
+        "mcse": 0.033926691677251195
+      },
+      "model_interval_mass": {
+        "mean": 0.980252136962293,
+        "mcse": 0.0010947381238695006
+      },
+      "coverage_minus_model_mass": {
+        "mean": -0.06780213696229301,
+        "mcse": 0.002349476904903846
+      }
+    }
+  ],
+  "paired_log_score_differences": [
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 0.4127501055528375,
+      "mcse": 0.005894285201920166
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.19343222525750525,
+      "mcse": 0.0037276221642711304
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": "all",
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.0011123558447063253,
+      "mcse": 0.0002123304349723678
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 0.31750440390767815,
+      "mcse": 0.01093948807827777
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.31735072389643093,
+      "mcse": 0.010888476981751077
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.0017159475803953939,
+      "mcse": 0.00043713045424403815
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 0.3487077379652919,
+      "mcse": 0.009489742206089728
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.2579245315605129,
+      "mcse": 0.007999498652112089
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 0.25,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.0015700804603922557,
+      "mcse": 0.00038968894031793676
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 0.43573738610677154,
+      "mcse": 0.011009494766094302
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.1527604290071108,
+      "mcse": 0.0058439105109283065
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 1.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.0006651320099682457,
+      "mcse": 0.0003919964989388424
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 0.5490508942316081,
+      "mcse": 0.012973723512522399
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.04569321656596623,
+      "mcse": 0.0028409332272618885
+    },
+    {
+      "scenario": "stable_population",
+      "history_years": 4.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.0004982633280695082,
+      "mcse": 0.00022905217011550007
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 1.5528938085564263,
+      "mcse": 0.022096836720949153
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.661252788431087,
+      "mcse": 0.01163736041719315
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": "all",
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.11036979130950211,
+      "mcse": 0.00360595047828154
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 1.3012893181943972,
+      "mcse": 0.03524589830626339
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 1.2968522537874134,
+      "mcse": 0.03439169545826715
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.19424368573057665,
+      "mcse": 0.007388898358928331
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 1.4102185689955968,
+      "mcse": 0.03662483850056234
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.8820811130946028,
+      "mcse": 0.02298304375249376
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 0.25,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.14258703642456289,
+      "mcse": 0.0059357637577771676
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 1.6112299478284007,
+      "mcse": 0.03710457969279263
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.39356872619159977,
+      "mcse": 0.010726035726559268
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 1.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.08049816279422836,
+      "mcse": 0.004156558972383383
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "comparison": "pooled_poisson minus empirical_bayes_nb",
+      "mean": 1.8888373992073115,
+      "mcse": 0.03187018920961559
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "comparison": "eb_mean_poisson minus empirical_bayes_nb",
+      "mean": 0.07250906065073211,
+      "mcse": 0.0028763340967907494
+    },
+    {
+      "scenario": "shifted_population",
+      "history_years": 4.0,
+      "comparison": "oracle_nb minus empirical_bayes_nb",
+      "mean": -0.024150280288640476,
+      "mcse": 0.00139940805520273
+    }
+  ]
+}
